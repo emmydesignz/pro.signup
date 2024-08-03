@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+body{
+    background-image: url(two-confident-business-man-shaki\ -\ Copy.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.obj-width{
+    max-width: 1200px;
+}
+
+.heading{
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    margin-left: 25rem;
+    margin-top: 5rem;
+    padding: 1rem;
+    border-radius: 10px;
+    border: 1px solid orange;
+    height: 450px;
+    width: 400px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+}
+
+.head h1{
+    text-align: center;
+    padding: .5rem;
+    border-radius: 10px;
+    color: white;
+    background-color: orangered;
+}
+
+.head{
+    margin-bottom: 1rem;
+}
+
+label{
+    margin-bottom: 0.1rem;
+}
+
+input{
+    font-size: 0.6rem;
+    font-weight: 600;
+    padding: 0.4rem;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    height: 30px;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid grey;
+    margin-bottom: .5rem;
+}
+
+.signup{
+    background-color: orangered;
+    height: 30px;
+    width: 200px;
+    margin-left: 5rem;
+    border: none;
+    height: 40px;
+    border-radius: 10px;
+    margin-top: 1rem;
+}
+
+.signup:hover{
+    box-shadow: 0px 3px 3px grey;
+    transform: scale(1.1);
+    transition: all 0.2s ease-in-out;
+    color: white;
+}
+
+@media(max-width: 500px){
+    .heading{
+        width: 180px;
+        margin: .5rem;
+        margin-top: 2rem;
+        height: 270px;
+    }
+
+    .head{
+        height: 10px;
+        margin-bottom: 3rem;
+    }
+
+    .head h1{
+        font-size: 0.9rem;
+    }
+
+    label{
+        font-size: 0.5rem;
+        margin-bottom: 0;
+    }
+
+    input{
+        height: 17px;
+    }
+
+    .signup{
+        height: 20px;
+        font-size: 0.6rem;
+        margin-left: 1.5rem;
+        width: 100px;
+        border-radius: 5px;
+        margin-top: 0;
+    }
+}
+
+</style>
+
+<body>
+
+    
+    <div class="heading obj-width">
+        
+        <div class="head">
+            <h1>Create an Account</h1>
+        </div>
+
+        <div class="form-container">
+
+            <form action="">
+                <label for="name">Enter your name</label>
+                <input type="text" required>
+
+                <label for="number">Mobile Number</label>
+                <input type="number" required>
+
+                <label for="password">Create a Password</label>
+                <input type="password" required>
+
+                <label for="password">Confirm Password</label>
+                <input type="password" required>
+
+                <label for="Code">Referral Code (Optional)</label>
+                <input type="number">
+
+                <button class="signup">Sign Up</button>
+            </form>
+
+        </div>
+    </div>
+
+
+
+</body>
+</html>
